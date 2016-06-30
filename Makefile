@@ -5,7 +5,7 @@
 ## Login   <wroble_h@epitech.eu>
 ## 
 ## Started on  Thu Jun 30 17:03:30 2016 Hubert WROBLEWSKI
-## Last update Thu Jun 30 19:58:16 2016 Hubert WROBLEWSKI
+## Last update Thu Jun 30 23:30:05 2016 Hubert WROBLEWSKI
 ##
 
 CXX	= clang++ -std=c++11
@@ -18,6 +18,7 @@ SRCS	= src/main.cpp \
 	src/CreateMap.cpp \
 	src/Game.cpp \
 	src/SetGame.cpp \
+	src/Case.cpp
 
 OBJS	= $(SRCS:.cpp=.o)
 

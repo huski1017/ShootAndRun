@@ -5,7 +5,7 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Thu Jun 30 17:56:54 2016 Hubert WROBLEWSKI
-// Last update Thu Jun 30 20:06:08 2016 Hubert WROBLEWSKI
+// Last update Thu Jun 30 23:29:46 2016 Hubert WROBLEWSKI
 //
 
 #include <iostream>
@@ -18,6 +18,7 @@ void	Game::fileMap()
 {
   int	ix;
   int	iy = 0;
+  int	type;
 
   srand(time(NULL));
   while (iy < this->y)
@@ -25,8 +26,13 @@ void	Game::fileMap()
       ix = 0;
       while (ix < this->x)
 	{
-	  this->map[iy][ix] = std::rand() % 3 + 1;
-	  std::cout << map[iy][ix];
+	  type = std::rand() % 3 + 1;
+	  if (type == 1)
+	    this->map[iy][ix].setPlain();
+	  else if (type == 2)
+	    this->map[iy][ix].setMountain();
+	  else
+	    this->map[iy][ix].setRiver();
 	  ix++;
 	}
       std::cout << std::endl;
@@ -36,7 +42,7 @@ void	Game::fileMap()
 
 void	Game::createMap()
 {
-  std::vector< std::vector<int>>	newMap;
+  std::vector< std::vector<Case>>	newMap;
 
   newMap.resize(this->y);
   for (int n = 0; n < this->y; n++)
