@@ -5,7 +5,7 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Thu Jun 30 23:09:08 2016 Hubert WROBLEWSKI
-// Last update Thu Jun 30 23:31:07 2016 Hubert WROBLEWSKI
+// Last update Sat Jul  2 11:48:02 2016 Hubert WROBLEWSKI
 //
 
 #include <iostream>
@@ -47,7 +47,6 @@ void	Case::setRiver()
   this->speed = -1;
   this->def = 1;
   this->off = 0;
-  std::cout << "set as river" << std::endl;
 }
 
 void	Case::setMountain()
@@ -56,7 +55,6 @@ void	Case::setMountain()
   this->speed = -2;
   this->def = 0;
   this->off = 0;
-  std::cout << "set as montagne" << std::endl;
 }
 
 void	Case::setPlain()
@@ -65,5 +63,4 @@ void	Case::setPlain()
   this->speed = 0;
   this->def = 1;
   this->off = 1;
-  std::cout << "set as plaine" << std::endl;
 }

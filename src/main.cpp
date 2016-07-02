@@ -5,12 +5,13 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Thu Jun 30 17:10:46 2016 Hubert WROBLEWSKI
-// Last update Thu Jun 30 19:55:36 2016 Hubert WROBLEWSKI
+// Last update Sat Jul  2 11:44:22 2016 Hubert WROBLEWSKI
 //
 
 #include <iostream>
 #include <string>
 #include "Game.hh"
+#include "Berserk.hh"
 
 static int	usage()
 {

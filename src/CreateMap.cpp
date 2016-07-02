@@ -5,7 +5,7 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Thu Jun 30 17:56:54 2016 Hubert WROBLEWSKI
-// Last update Thu Jun 30 23:29:46 2016 Hubert WROBLEWSKI
+// Last update Sat Jul  2 11:47:18 2016 Hubert WROBLEWSKI
 //
 
 #include <iostream>
@@ -35,7 +35,6 @@ void	Game::fileMap()
 	    this->map[iy][ix].setRiver();
 	  ix++;
 	}
-      std::cout << std::endl;
       iy++;
     }
 }
