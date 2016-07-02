@@ -5,11 +5,13 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Thu Jun 30 23:01:26 2016 Hubert WROBLEWSKI
-// Last update Thu Jun 30 23:30:19 2016 Hubert WROBLEWSKI
+// Last update Sun Jul  3 00:13:16 2016 Hubert WROBLEWSKI
 //
 
 #ifndef CASE_HH_
 # define CASE_HH_
+
+#include <string>
 
 class	Case
 {
@@ -17,6 +19,7 @@ class	Case
   int	speed;
   int	def;
   int	off;
+  std::string	filename;
 public:
   Case();
   ~Case();
@@ -27,6 +30,7 @@ public:
   void	setRiver();
   void	setMountain();
   void	setPlain();
+  std::string	getFilename() const;
 };
 
 #endif /* !CASE_HH_ */

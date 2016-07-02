@@ -5,7 +5,7 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Fri Jul  1 14:32:49 2016 Hubert WROBLEWSKI
-// Last update Sat Jul  2 03:01:44 2016 Hubert WROBLEWSKI
+// Last update Sat Jul  2 11:58:49 2016 Hubert WROBLEWSKI
 //
 
 #ifndef BERSERK_HH_

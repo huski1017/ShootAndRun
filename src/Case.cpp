@@ -5,10 +5,11 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Thu Jun 30 23:09:08 2016 Hubert WROBLEWSKI
-// Last update Sat Jul  2 11:48:02 2016 Hubert WROBLEWSKI
+// Last update Sun Jul  3 00:12:46 2016 Hubert WROBLEWSKI
 //
 
 #include <iostream>
+#include <SFML/Graphics.hpp>
 #include "Case.hh"
 
 Case::Case()
@@ -43,24 +44,35 @@ int	Case::getOff() const
 
 void	Case::setRiver()
 {
+  this->filename = "media/river.png";
   this->range = 0;
   this->speed = -1;
   this->def = 1;
   this->off = 0;
+  std::cout << "Set river" << std::endl;
 }
 
 void	Case::setMountain()
 {
+  this->filename = "media/mountain.png";
   this->range = 1;
   this->speed = -2;
   this->def = 0;
   this->off = 0;
+  std::cout << "Set mountain" << std::endl;
 }
 
 void	Case::setPlain()
 {
+  this->filename = "media/grass.png";
   this->range = 0;
   this->speed = 0;
   this->def = 1;
   this->off = 1;
+  std::cout << "Set plain" << std::endl;
+}
+
+std::string	Case::getFilename() const
+{
+  return (this->filename);
 }

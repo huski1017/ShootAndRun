@@ -5,7 +5,7 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Fri Jul  1 16:53:20 2016 Hubert WROBLEWSKI
-// Last update Sat Jul  2 03:01:53 2016 Hubert WROBLEWSKI
+// Last update Sat Jul  2 11:59:07 2016 Hubert WROBLEWSKI
 //
 
 #ifndef TANK_HH_

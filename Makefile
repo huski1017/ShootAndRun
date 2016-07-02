@@ -5,10 +5,12 @@
 ## Login   <wroble_h@epitech.eu>
 ## 
 ## Started on  Thu Jun 30 17:03:30 2016 Hubert WROBLEWSKI
-## Last update Fri Jul  1 19:55:21 2016 Hubert WROBLEWSKI
+## Last update Sat Jul  2 17:47:03 2016 Hubert WROBLEWSKI
 ##
 
-CXX	= clang++ -std=c++11
+##CXX	= clang++ -std=c++11
+
+CXX	= g++ -std=c++0x
 
 RM	= rm -f
 
@@ -21,16 +23,19 @@ SRCS	= src/main.cpp \
 	src/Case.cpp \
 	src/Entity.cpp \
 	src/Berserk.cpp \
-	src/Tank.cpp
+	src/Tank.cpp \
+	src/Artillery.cpp \
 
 OBJS	= $(SRCS:.cpp=.o)
 
-CPPFLAGS	= -I./include
+CPPFLAGS	= -I./include -I./SFML/include
+
+LDFLAGS	= -L./SFML/lib -lsfml-graphics -lsfml-window -lsfml-system
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CXX) -o $(NAME) $(OBJS)
+	$(CXX) -o $(NAME) $(OBJS) $(LDFLAGS)
 
 clean:
 	$(RM) $(OBJS)

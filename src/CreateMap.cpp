@@ -5,16 +5,17 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Thu Jun 30 17:56:54 2016 Hubert WROBLEWSKI
-// Last update Sat Jul  2 11:47:18 2016 Hubert WROBLEWSKI
+// Last update Sun Jul  3 00:11:28 2016 Hubert WROBLEWSKI
 //
 
 #include <iostream>
 #include <vector>
+#include <string>
 #include <cstdlib>
 #include <time.h>
 #include "Game.hh"
 
-void	Game::fileMap()
+int	Game::fileMap()
 {
   int	ix;
   int	iy = 0;
@@ -37,9 +38,10 @@ void	Game::fileMap()
 	}
       iy++;
     }
+  return (0);
 }
 
-void	Game::createMap()
+int	Game::createMap()
 {
   std::vector< std::vector<Case>>	newMap;
 
@@ -47,6 +49,19 @@ void	Game::createMap()
   for (int n = 0; n < this->y; n++)
     newMap[n].resize(this->x);
   this->map = newMap;
-  this->fileMap();
-  return;
+  if (this->fileMap() == -1)
+    return (-1);
+  return (0);
+}
+
+int	drawTile(sf::RenderWindow *window, std::string filename, int x, int y)
+{
+  sf::Texture	texture;
+  sf::Sprite	sprite;
+  if (!texture.loadFromFile(filename))
+    return (-1);
+  sprite.setTexture(texture);
+  sprite.setPosition(x, y);
+  window->draw(sprite);
+  return (0);
 }

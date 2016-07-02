@@ -5,13 +5,15 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Thu Jun 30 23:13:19 2016 Hubert WROBLEWSKI
-// Last update Thu Jun 30 23:29:47 2016 Hubert WROBLEWSKI
+// Last update Sun Jul  3 00:14:53 2016 Hubert WROBLEWSKI
 //
 
 #ifndef GAME_HH_
 # define GAME_HH_
 
 #include <vector>
+#include <string>
+#include <SFML/Graphics.hpp>
 #include "Case.hh"
 
 class	Game
@@ -23,10 +25,14 @@ public:
   Game(int w, int h);
   ~Game();
   std::vector<std::vector<Case>> const	&getMap() const;
-  void	createMap();
-  void	fileMap();
+  int					getX() const;
+  int					getY() const;
+  int					createMap();
+  int					fileMap();
+  int					drawMap(sf::RenderWindow *);
 };
 
-int	setGame(Game *game);
+int	startGame(Game *game);
+int	drawTile(sf::RenderWindow *, std::string, int, int);
 
 #endif /* !GAME_HH_ */

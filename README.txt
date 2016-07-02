@@ -1,3 +1,5 @@
+If you have some troubles during compilation try to install g++-4.9
+
 If you want to play this game you have to know a few things before.
 
 You have to give some parameters if you want to run this game :
