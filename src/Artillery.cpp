@@ -5,15 +5,16 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Sat Jul  2 11:52:43 2016 Hubert WROBLEWSKI
-// Last update Sat Jul  2 11:57:08 2016 Hubert WROBLEWSKI
+// Last update Sun Jul  3 02:09:29 2016 Hubert WROBLEWSKI
 //
 
 #include <iostream>
 #include "Entity.hh"
 #include "Artillery.hh"
 
-Artillery::Artillery(int x, int y)
+Artillery::Artillery(int x, int y, std::string file)
 {
+  this->setFilename(file);
   this->setPosX(x);
   this->setPosY(y);
   this->setLife(15);

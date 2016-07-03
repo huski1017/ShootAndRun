@@ -5,7 +5,7 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Thu Jun 30 17:56:54 2016 Hubert WROBLEWSKI
-// Last update Sun Jul  3 00:11:28 2016 Hubert WROBLEWSKI
+// Last update Sun Jul  3 17:11:58 2016 Hubert WROBLEWSKI
 //
 
 #include <iostream>
@@ -58,10 +58,19 @@ int	drawTile(sf::RenderWindow *window, std::string filename, int x, int y)
 {
   sf::Texture	texture;
   sf::Sprite	sprite;
+
   if (!texture.loadFromFile(filename))
     return (-1);
   sprite.setTexture(texture);
   sprite.setPosition(x, y);
   window->draw(sprite);
+  return (0);
+}
+
+int	Game::drawRange(sf::RenderWindow *window)
+{
+  if (drawTile(window, this->range.getFilename(), this->range.getPosX() * 50,
+	       this->range.getPosY() * 50) == -1)
+    return (-1);
   return (0);
 }

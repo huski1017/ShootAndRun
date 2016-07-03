@@ -5,7 +5,7 @@
 ## Login   <wroble_h@epitech.eu>
 ## 
 ## Started on  Thu Jun 30 17:03:30 2016 Hubert WROBLEWSKI
-## Last update Sat Jul  2 17:47:03 2016 Hubert WROBLEWSKI
+## Last update Sun Jul  3 22:36:40 2016 Hubert WROBLEWSKI
 ##
 
 ##CXX	= clang++ -std=c++11
@@ -25,12 +25,16 @@ SRCS	= src/main.cpp \
 	src/Berserk.cpp \
 	src/Tank.cpp \
 	src/Artillery.cpp \
+	src/EventManager.cpp \
+	src/Range.cpp \
+	src/AnimeExplosion.cpp \
+	src/EndGame.cpp \
 
 OBJS	= $(SRCS:.cpp=.o)
 
 CPPFLAGS	= -I./include -I./SFML/include
 
-LDFLAGS	= -L./SFML/lib -lsfml-graphics -lsfml-window -lsfml-system
+LDFLAGS	= -L./SFML/lib -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 
 all: $(NAME)
 

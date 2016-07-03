@@ -5,13 +5,14 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Fri Jul  1 16:59:27 2016 Hubert WROBLEWSKI
-// Last update Sat Jul  2 11:59:43 2016 Hubert WROBLEWSKI
+// Last update Sun Jul  3 02:08:23 2016 Hubert WROBLEWSKI
 //
 
 #include "Tank.hh"
 
-Tank::Tank(int x, int y)
+Tank::Tank(int x, int y, std::string file)
 {
+  this->setFilename(file);
   this->setPosX(x);
   this->setPosY(y);
   this->setLife(10);

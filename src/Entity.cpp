@@ -5,7 +5,7 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Fri Jul  1 13:14:29 2016 Hubert WROBLEWSKI
-// Last update Fri Jul  1 17:11:38 2016 Hubert WROBLEWSKI
+// Last update Sun Jul  3 18:30:48 2016 Hubert WROBLEWSKI
 //
 
 #include "Entity.hh"
@@ -55,6 +55,19 @@ void	Entity::setPosY(int newPos)
   this->posY = newPos;
 }
 
+int	Entity::loseLife(int hp)
+{
+  this->life = this->life - hp;
+  if (this->life <= 0)
+    return (0);
+  return (1);
+}
+
+void	Entity::setFilename(std::string newFile)
+{
+  this->filename = newFile;
+}
+
 int	Entity::getLife() const
 {
   return (this->life);
@@ -88,4 +101,9 @@ int	Entity::getPosX() const
 int	Entity::getPosY() const
 {
   return (this->posY);
+}
+
+std::string	Entity::getFilename() const
+{
+  return (this->filename);
 }

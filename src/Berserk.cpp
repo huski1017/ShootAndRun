@@ -5,14 +5,15 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Fri Jul  1 14:51:52 2016 Hubert WROBLEWSKI
-// Last update Sat Jul  2 11:59:14 2016 Hubert WROBLEWSKI
+// Last update Sun Jul  3 02:07:10 2016 Hubert WROBLEWSKI
 //
 
 #include <iostream>
 #include "Berserk.hh"
 
-Berserk::Berserk(int x, int y)
+Berserk::Berserk(int x, int y, std::string file)
 {
+  this->setFilename(file);
   this->setPosX(x);
   this->setPosY(y);
   this->setLife(15);

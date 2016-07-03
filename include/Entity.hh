@@ -5,11 +5,13 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Fri Jul  1 13:09:15 2016 Hubert WROBLEWSKI
-// Last update Fri Jul  1 17:09:28 2016 Hubert WROBLEWSKI
+// Last update Sun Jul  3 18:31:03 2016 Hubert WROBLEWSKI
 //
 
 #ifndef ENTITY_HH_
 # define ENTITY_HH_
+
+#include <string>
 
 class	Entity
 {
@@ -20,6 +22,7 @@ class	Entity
   int	range;
   int	posX;
   int	posY;
+  std::string	filename;
 public:
   Entity();
   virtual ~Entity();
@@ -30,6 +33,8 @@ public:
   void	setRange(int);
   void	setPosX(int);
   void	setPosY(int);
+  void	setFilename(std::string);
+  int	loseLife(int);
   int	getSpeed() const;
   int	getLife() const;
   int	getOff() const;
@@ -37,6 +42,7 @@ public:
   int	getRange() const;
   int	getPosX() const;
   int	getPosY() const;
+  std::string	getFilename() const;
 };
 
 #endif /* !ENTITY_HH_ */
