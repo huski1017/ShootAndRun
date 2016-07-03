@@ -5,7 +5,7 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Thu Jun 30 19:42:48 2016 Hubert WROBLEWSKI
-// Last update Sun Jul  3 22:40:01 2016 Hubert WROBLEWSKI
+// Last update Sun Jul  3 23:16:37 2016 Hubert WROBLEWSKI
 //
 
 #include <iostream>
@@ -180,6 +180,7 @@ void	Game::changePosX(int dir)
       if (this->mapUnit[this->unit[this->current]->getPosX() - 1][this->unit[this->current]->getPosY()] == 0)
 	{
 	  this->mapUnit[this->unit[this->current]->getPosX()][this->unit[this->current]->getPosY()] = 0;
+	  this->move = this->move - this->map[this->unit[this->current]->getPosX()][this->unit[this->current]->getPosY()].getSpeed();
 	  this->unit[this->current]->setPosX(this->unit[this->current]->getPosX() - 1);
 	  this->mapUnit[this->unit[this->current]->getPosX()][this->unit[this->current]->getPosY()] = this->current + 1;
 	  this->move--;
@@ -190,6 +191,7 @@ void	Game::changePosX(int dir)
       if (this->mapUnit[this->unit[this->current]->getPosX() + 1][this->unit[this->current]->getPosY()] == 0)
 	{
 	  this->mapUnit[this->unit[this->current]->getPosX()][this->unit[this->current]->getPosY()] = 0;
+	  this->move = this->move - this->map[this->unit[this->current]->getPosX()][this->unit[this->current]->getPosY()].getSpeed();
 	  this->unit[this->current]->setPosX(this->unit[this->current]->getPosX() + 1);
 	  this->mapUnit[this->unit[this->current]->getPosX()][this->unit[this->current]->getPosY()] = this->current + 1;
 	  this->move--;
@@ -214,6 +216,7 @@ void	Game::changePosY(int dir)
       if (this->mapUnit[this->unit[this->current]->getPosX()][this->unit[this->current]->getPosY() - 1] == 0)
 	{
 	  this->mapUnit[this->unit[this->current]->getPosX()][this->unit[this->current]->getPosY()] = 0;
+	  this->move = this->move - this->map[this->unit[this->current]->getPosX()][this->unit[this->current]->getPosY()].getSpeed();
 	  this->unit[this->current]->setPosY(this->unit[this->current]->getPosY() - 1);
 	  this->mapUnit[this->unit[this->current]->getPosX()][this->unit[this->current]->getPosY()] = this->current + 1;
 	  this->move--;
@@ -224,6 +227,7 @@ void	Game::changePosY(int dir)
       if (this->mapUnit[this->unit[this->current]->getPosX()][this->unit[this->current]->getPosY() + 1] == 0)
 	{
 	  this->mapUnit[this->unit[this->current]->getPosX()][this->unit[this->current]->getPosY()] = 0;
+	  this->move = this->move - this->map[this->unit[this->current]->getPosX()][this->unit[this->current]->getPosY()].getSpeed();
 	  this->unit[this->current]->setPosY(this->unit[this->current]->getPosY() + 1);
 	  this->mapUnit[this->unit[this->current]->getPosX()][this->unit[this->current]->getPosY()] = this->current + 1;
 	  this->move--;

@@ -5,7 +5,7 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Thu Jun 30 23:09:08 2016 Hubert WROBLEWSKI
-// Last update Sun Jul  3 14:23:04 2016 Hubert WROBLEWSKI
+// Last update Sun Jul  3 23:14:52 2016 Hubert WROBLEWSKI
 //
 
 #include <iostream>
@@ -46,7 +46,7 @@ void	Case::setRiver()
 {
   this->filename = "media/river.png";
   this->range = 0;
-  this->speed = -1;
+  this->speed = 1;
   this->def = 1;
   this->off = 0;
 }
@@ -55,7 +55,7 @@ void	Case::setMountain()
 {
   this->filename = "media/mountain.png";
   this->range = 1;
-  this->speed = -2;
+  this->speed = 2;
   this->def = 0;
   this->off = 0;
 }

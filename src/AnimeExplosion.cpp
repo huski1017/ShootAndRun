@@ -5,7 +5,7 @@
 // Login   <wroble_h@epitech.eu>
 // 
 // Started on  Sun Jul  3 20:52:57 2016 Hubert WROBLEWSKI
-// Last update Sun Jul  3 22:20:33 2016 Hubert WROBLEWSKI
+// Last update Sun Jul  3 23:31:34 2016 Hubert WROBLEWSKI
 //
 
 #include <iostream>
@@ -30,6 +30,7 @@ void	animeExplosion(Game *game, sf::RenderWindow *window, int x, int y)
 	      "media/explosion13.png", "media/explosion14.png"};
   texture.resize(size);
   sprite.resize(size);
+  usleep(500000);
   while (i < size)
     {
       window->clear();
