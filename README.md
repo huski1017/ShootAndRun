@@ -1,6 +1,10 @@
 # ShootAndRun
+
+Project realized in C++ and finished in 4 days.
+
 If you are experiencing some troubles during compilation try to install g++-4.9 :
 ```
+ apt-get update
  apt-get install g++-4.9
 ```
 
@@ -38,3 +42,7 @@ Character controls :
     Q = LEFT  
     S = DOWN  
     D = RIGHT  
+    ENTER = choose a target  
+    
+    
+    Use ECHAP to exit the game.
