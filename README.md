@@ -20,9 +20,9 @@ Or you can use "launch.sh" with the same parameters.
 When you want to chose an other character you have to press :
 RED TEAM :  
     F1 : red berserk #1  
-    F2 : red tank #1
+    F2 : red tank #1  
     F3 : red artillery #1  
-    F4 : red tank #2
+    F4 : red tank #2  
     F5 : red berserk #2  
 BLUE TEAM :  
     F6 : blue berserk #1  
