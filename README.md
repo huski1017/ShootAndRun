@@ -44,5 +44,4 @@ Character controls :
     D = RIGHT  
     ENTER = choose a target  
     
-    
     Use ECHAP to exit the game.
