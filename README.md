@@ -23,7 +23,7 @@ Then when you will run the game you will have to do :
 
 Or you can use "launch.sh" with the same parameters.
 
-When you want to chose an other character you have to press :
+When you want to chose an other character you have to press :  
 RED TEAM :  
     F1 : red berserk #1  
     F2 : red tank #1  
