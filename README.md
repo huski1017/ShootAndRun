@@ -1,5 +1,7 @@
 # ShootAndRun
 
+![alt tag](http://www.noelshack.com/2016-39-1474902662-shootandrun.png)
+
 Project realized in C++ and finished in 4 days.
 
 If you are experiencing some troubles during compilation try to install g++-4.9 :
